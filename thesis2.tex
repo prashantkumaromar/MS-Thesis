@@ -1,0 +1,830 @@
+
+\documentclass[oneside]{book}
+%\documentclass[openany]{book}
+%\documentclass{book}
+\usepackage{csquotes}
+\usepackage{graphicx}
+
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{mydef}{Definition}
+\newtheorem{exmp}{Example}
+
+\title{Isoperimetric Inequality}
+ 
+\author{Prashant Kumar}
+\date{\today}
+\usepackage{}
+\begin{document}
+\maketitle
+
+\tableofcontents
+\thispagestyle{empty}
+\chapter*{Certificate of Examination}
+This is to certify that the dissertation titled \enquote{Isoperimetric Inequality} submitted by Prashant Kumar (Reg. number $-$ MS15114) for the partial fulfilment of BS-MS dual degree program of the Institute, has been examined by the thesis committee duly appointed by the Institute. The committee finds the work done by the candidate satisfactory and recommends that the report be accepted.\\\\
+\textbf{Dr. Soma Maity} (Supervisor)\\
+\\
+ \textbf{Dr. Lingaraj Sahu}  \hfill           \textbf{ Dr. Pranab Sardar}\\
+\\
+\\
+\rightline{\textbf{Date:} April 2020}
+\thispagestyle{empty}
+\chapter*{Declaration of Authorship}
+The work presented in this dissertation has been carried out by me under the guidance of \textbf{Dr. Soma Maity} at the Indian Institute of Science Education and Research, Mohali.
+This work has not been submitted in part or in full for a degree, a diploma, or a fellow- ship to any other university or institute. Whenever contributions of others are involved, every effort is made to indicate this clearly, with due acknowledgement of collaborative research and discussions. This thesis is a bonafide record of original work done by me and all sources listed within have been detailed in the bibliography.\\
+\\
+\textbf{Prashant Kumar} (Candidate)\\
+Date: April 2020\\
+\\
+\\
+\\
+In my capacity as the supervisor of the candidate$'$s project work, I certify that the above statements by the candidate are true to the best of my knowledge.\\
+\\
+\textbf{Dr. Soma Maity}(Supervisor)\\
+Date: April 2020
+\thispagestyle{empty}
+\chapter*{Acknowledgements}
+Thank you.
+\thispagestyle{empty}
+
+\chapter*{Abstract}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\chapter{Introduction}
+ Word "Isoperimetric" means having same perimeter. Isoperimetric Inequality  is a geometric inequality which relates perimeter of a set and its volume. classical Isopermetric inequality in the plane is that Among all closed curves in the plane of fixed perimeter, which curve if it exists, maximizes the area of its enclosed region? or in other way, Among all closed curves in the plane enclosing a fixed area, which curve minimizes the perimeter?\\
+Isoperimetric Inequalities are defined for various space like for Ecludian space and Reimannian manifolds. In ecludian space sharp Isoperimetric Inequality are found with equality while in Reimannian manifolds Isoperimetric Inequality are not exact but are close enough to get its global geometric information. Here We will be discussing only  Isoperimetric Inequality in Ecludian spaces e.g. in  $\mathbb{R}^{n}$ and then specifically in convex subsets of $\mathbb{R}^{n}$.
+\\
+
+\chapter{Preliminaries }
+hyper plane , half space 
+
+
+ \chapter{Isoperimetric Inequality in $\mathbb{R}^{n}$} 
+ 
+ Isoperimetric problem is to finding the domain which contains the greatest area on considering  all bounded domains with fixed given perimeter.
+ 
+
+\section{\textbf{ Definitions}}
+\subsection{Curvature}
+
+    
+For any $C^{2}$ path $\omega:(\alpha, \beta) \rightarrow \mathbb{R}^{2}$, its velocity vectorn field is given by its derivative $w'$ and its aceeleration vector field by its second derivative $w''$ assuming w is an immmersion($w'$ never vanishes ) in the plane.  Small infinitesimal element of Arc length is given by  $d s=\left|\omega^{\prime}(t)\right| d t$.
+\\Unit tangent vector field along $\omega$ is $\mathbf{T}(t)$ defined as
+
+\begin{equation}  
+\textbf{{T}}(t)=\frac{\omega^{\prime}(t)}{\left|\omega^{\prime}(t)\right|}
+\end{equation} 
+and unit normal vector field $\mathbf{N}$ along $\omega$ is defined as 
+\begin{equation}
+     \mathbf{N}=\mathbf{\tau} \mathbf{T}
+\end{equation}
+   
+    
+where $ \tau: \mathbf{R}^{2} \rightarrow \mathbf{R}^{2}$ is the rotation of $\mathbb{R}^{2}$ by $\pi / 2$ radians, and
+
+  Then its curvature $\kappa$ is defined as
+  \begin{equation}
+    \frac{d \mathbf{T}}{d s}=\kappa \mathbf{N}
+\end{equation}  and similarly it turns out that \begin{equation}
+    \frac{d \mathbf{N}}{d s}=-\kappa \mathbf{T}
+\end{equation}
+
+\subsection{Relative Compact Domain}
+a relatively compact subspace of a topological space X is a subset whose closure is compact.
+every subset of a compact space is relatively compact since
+    \
+
+
+
+
+
+
+
+\section{\textbf{Isoperimetric Inequality in the Plane($\mathbb{R}^{2}$)}}
+ In $\mathbb{R}$, Discrete measure of boundary of any bounded open subset of the line is greater than or equal to 2, and equal to 2 when given bounded open subset is just an open interval.\\
+  In $\mathbb{R}^{2}$ Isoperimetric problem is to finding the domain which contains the greatest area on considering  all bounded domains with fixed given perimeter. For $\mathbb{R}^{2}$ it is disk . 
+
+    If area of domain is A and length of its boundary is L then using values of perimeter and area of disk,
+    as an analytical inequality it can be written as\par
+    \begin{center}
+    $L^{2} \geq 4 \pi A$ 
+         \end{center}\par
+        In $\mathbb{R}^{n}$ 
+        , $n \geq 2$  it can be generalised as
+        
+        \begin{center}
+             $\frac{A(\partial \Omega)}{V(\Omega)^{1-1 / n}} \geq \frac{A\left(S^{n-1}\right)}{V\left(\mathbb{B}^{n}\right)^{1-1 / n}}$
+        \end{center}
+        where $\Omega$ is any bounded domain in $\mathbb{R}^{n}$ and $\partial \Omega$ its boundary, $V$ denotes $(n-1)$
+measure and $A$ denotes $(n-1)$ -measure, $B^{n}$ is the unit disk in $R^{n},$ and $S^{n-1}$,
+the unit sphere in $R^{n}$.
+Let $\omega_{n}$ denote the $(n-1)$ -dimensional volume of $B^{n}$ and  $c_{n-1}$ the $(n-1)$ -dimensional surface area of $S^{n-1}$ \\\\
+
+
+
+We have standard result of $\omega_{n}$ and $c_{n-1}$ for $\mathbb{R}^{n}$ as  
+
+$$ \mathbf{c}_{\mathbf{n}-1} = \frac{2 \pi^{n / 2}}{\Gamma(n / 2)}$$ 
+$$ \omega_{\mathbf{n} } = \frac{\mathbf{c}_{\mathbf{n}-1}}{n} $$ \par
+that gives us
+
+$$ \frac{A(\partial \Omega)}{V(\Omega)^{1-1 / n}} \geq n \omega_{\mathbf{n}}^{1 / n}$$
+
+
+
+
+
+
+
+
+\begin{theorem}{(Uniqueness for Smooth Boundaries)} \\
+ Given
+the area $A,$ let $D$ vary over relatively compact domains in the plane of area $A$
+with $C^{1}$ boundary, and suppose the domain $\Omega, \partial \Omega \in C^{2}$, realizes the minimal
+boundary length among all such domains $D .$ We claim that $\Omega$ is a disk.
+\end{theorem}
+
+
+\begin{proof}
+
+ since $\Omega$ is relatively compact in $R^{2},$ there exists a simply connected
+domain $\Omega_{0}$ such that
+$$
+\Omega=\Omega_{0} \backslash\{\text{finite disjoint union of closed topplogical disks} $$
+ but $\Omega_{0}=\Omega $ otherwise on adding the
+topological disks to $\Omega$, will increase its area  and decrease the lenghth of boundary and so $\Omega$ will no longer be minimizer. So $\Omega_{0}=\Omega,$ and is bounded by an imbedded circle.\par
+Let $\Gamma: \mathbf{S}^{1} \rightarrow \mathbb{R}^{2} \in C^{2}$ be the imbedding of the boundary of $\Omega .$ 
+consider a 1 -parameter family $\Gamma_{\epsilon}: \mathbf{S}^{2} \rightarrow \mathbb{R}^{2}$ of imbeddings
+\par
+$$
+v:\left(-\epsilon_{0}, \epsilon_{0}\right) \times \mathbf{S}^{1} \rightarrow \mathbb{R}^{2}
+$$
+such that the  $v(\epsilon, t)$ is given by
+$$
+v(\epsilon, t)=\Gamma_{\varepsilon}(t)=\Gamma(t)+\Psi(\epsilon, t) \nu(t), \quad \Psi(0, t)=0
+$$
+is $C^{1} .$ We have
+$$
+\frac{\partial v}{\partial \epsilon}=\frac{\partial \Psi}{\partial \epsilon} \nu
+$$ and $$\frac{\partial v}{\partial t}=\Gamma^{\prime}+\left\{\frac{\partial \Psi}{\partial t} \nu+\Psi \nu^{\prime}\right\}=\{1+\kappa \Psi\} \Gamma^{\prime}+\frac{\partial \Psi}{\partial t} \nu$$
+which implies  $$\left|\frac{\partial v}{\partial t}\right|=\left\{(1+\kappa \Psi)^{2}+\frac{1}{\left|\Gamma^{\prime}\right|^{2}}\left(\frac{\partial \Psi}{\partial t}\right)^{2}\right\}^{1 / 2}\left|\Gamma^{\prime}\right|$$
+Let $$\phi(t):=\left.\frac{\partial \Psi}{\partial \epsilon}\right|_{\epsilon=0}$$ 
+expanding $\Psi(\epsilon, t)$ aroud $\epsilon$ using Tailor series expansion we get 
+$$
+\Psi(\epsilon, t)=\epsilon \phi(t)+o(\epsilon), \quad \frac{\partial \Psi}{\partial \epsilon}=\phi(t)+o(1), \quad \frac{\partial \Psi}{\partial t}=O(\epsilon)
+$$
+On simplifying and ignoring $O^2(\epsilon)$ and its higher order term we will get
+$$
+\left|\frac{\partial v}{\partial t}\right|=\left|\Gamma^{\prime}\right|\{1+\epsilon x \phi+o(\epsilon)\}
+$$
+ the Area element $d A$  is given by
+$$
+d A=\left|\frac{\partial v}{\partial \epsilon} \times \frac{\partial v}{\partial t}\right| d \epsilon d t=\phi\left|\Gamma^{\prime}\right|\{1+o(1)\} d \epsilon d t=\{\phi+o(1)\} d \epsilon d s
+$$
+We have $A\left(\Omega_{\epsilon}\right)=A(\Omega)$ for all $\epsilon$, so for small $\epsilon$ $$
+A\left(\Omega_{\epsilon}\right)-A(\Omega)=\int_{0}^{\epsilon} d \sigma \int_{\Gamma}[\phi+o(1)] d s
+$$
+\pagebreak
+So we have $$
+\int_{\Gamma} \phi d s=0
+$$
+ Let $L(\epsilon)$ denote the length of $\Gamma_{e} .$  we have
+$L^{\prime}(0)=0$ because since $\Gamma$ has the shortest length, Therefore, because
+$L(\epsilon)=\int_{\mathbf{S^1}}\left|\frac{\partial v}{\partial t}\right| d t=\int_{\mathbf{S}^{1}}\left|\Gamma^{\prime}\right|\{1+\epsilon \kappa \phi+o(\epsilon)\} d t=\int_{\Gamma}\{1+\epsilon \kappa \phi+o(\epsilon)\} d s$
+ so if we have
+ $\quad \int_{\Gamma} \phi d s=0$ then 
+$$
+L^{\prime}(0)=\int_{\Gamma} \kappa \phi d s=0, 
+$$
+
+\end{proof} 
+
+\subsection{Theorem(Isoperimetric Inequality in $\mathbb{R}^{2}$ )} Let $\Omega$ be a relatively compact domain in $\mathbb{R}^{2}$, with boundary $\partial \Omega \in C^{1}$ Then
+  
+  $$ L^{2}(\partial \Omega) \geq 4 \pi A(\Omega) $$
+ with equality when $\Omega$ is a disk.\\\\
+
+\begin{proof}
+
+\end{proof} Let $x=x^{1} e_{1}+x^{2} e_{2}$ be the vector field on $R^{2}$ with base point $\textbf{x}=\left(x^{1}, x^{2}\right) .$
+We have 2-dimensional divergence theorem for any vector
+field $\textbf{x} \mapsto \xi(\textbf{x}) \in \mathbb{R}^{2}$ with support containing cl $\Omega$.
+$$\int_{\Omega} \operatorname{div} \boldsymbol{\xi} d A=\int_{a \Omega} \boldsymbol{\xi} \cdot \nu d s$$ where $\nu$ denote outward unit normal vector along $\partial\Omega$.
+For  $ x=x^{1} e_{1}+x^{2} e_{2}$ we have $\operatorname{div} \textbf{x}=2$ on all $\Omega$. So we have$$ 2 A(\Omega)=\int_{\Omega} \operatorname{div} x d A=\int_{\partial \Omega} x \cdot \nu d s$$
+Using vector-Schwartz inequality we have 
+
+$$ \int_{\partial \Omega} \mathbf{x} \cdot \nu d s \leq \int_{\partial \Omega} | mathbf{x}| d s  $$
+and now using integral cauchy-schwarz inequality.
+$\int_{\partial \Omega}|\mathbf{x}| d s \leq\left\{\int_{\partial \Omega}|\mathbf{x}|^{2} d s\right\}^{1 / 2}\left\{\int_{\partial \Omega} 1^{2} d s\right\}^{1 / 2}$
+$=L^{1 / 2}(\partial \Omega)\left\{\int_{\partial \Omega}|\mathbf{x}|^{2} d s\right\}^{1 / 2}$
+We have
+$|\mathbf{x}|^{2} = \left(x^{1}\right)^{2}+\left(x^{2}\right)^{2}, \quad\left|\frac{d \mathbf{x}}{d s}\right|^{2}=\left(\frac{d x^{1}}{d s}\right)^{2}+\left(\frac{d x^{2}}{d s}\right)^{2}$\\\\
+applying Wirtinger's inequality to each coordinate function $x^{1}(s)$ and $x^{2}(s)$ implies 
+$2 A(\Omega) \leq L^{1 / 2}(\partial \Omega)\left\{\int_{\partial \Omega}|\mathbf{x}|^{2} d s\right\}^{1 / 2} \leq L^{1 / 2}(\partial \Omega)\left\{\frac{L^{2}(\partial \Omega)}{4 \pi^{2}} \int_{\partial \Omega}\left|\mathbf{x}^{\prime}\right|^{2} d s\right\}^{1 / 2}$
+
+
+$=\frac{L^{2}(\partial \Omega)}{2 \pi}$ \\
+So we have $L^{2}(\partial \Omega) \geq 4 \pi A(\Omega)$\\
+Equality follows easily as for the disk $L^{2}(\partial \Omega) = 4 \pi A(\Omega)$ \\
+
+
+\section{\textbf{Definitions}}
+
+\subsection{Convex Sets}
+    
+ A set $A$ in $R^{n}$ is \textbf{Convex} if $x, y \in A$ implies that $\lambda x+(1-\lambda) y \in A$
+for all $\lambda \in(0,1),$ that is, for any $x$ and $y$ in $A$ the closed line segment $[x, y]$ in
+$R^{n}$ joining them is contained in $A .$\\~\\
+
+ A Convex linear combination of elements $x_{1}, \ldots, x_{k} \in \mathbb{R}^{n}$ is the
+linear combination
+$
+\sum_{j=1}^{k} \lambda_{j} x_{j}
+$
+where the coefficients satisfy
+$$
+\sum_{j=1}^{k} \lambda_{j}=1, \quad \lambda_{j} \geq 0 \vee j
+$$
+
+
+If $A$ is convex then any convex linear combination of elements
+of $A$ is a point in $A .$\\
+
+ 
+ 
+ Given $A \subset R^{n}$, \textbf{Convex Hull} of $A,$ conv $A,$ is the smallest
+convex set containing $A .$
+
+
+ \subsection{Hyperplane} 
+    
+    Any hyperplane in $\mathbb{R}^{n}$
+can be defined by a linear equation of the form
+$$a_1x_1 + a_2x_2 + ... + a_nx_n = b,$$ where $a_1,a_2,..a_n$ are constants and $\{a_1,a_2,a_3,...,a_n)\}$ is normal vector to the hyperplane.
+
+Let $A, B$ be subsets of $R^{n},$ and $H$ a hyperplane. We say $A$ and
+$B$ are separated by $H$ if $A$ and $B$ lie in different closed half-spaces deter-
+mined by $H .$ If neither $A$ nor $B$ intersects $H,$ we say $H$ stricty separates $A$
+and $B .$\\
+Let $A$ be a subset of $R^{n}, H$ a hyperplane, $x \in A .$ We say $H$ is a
+supporting hyperplane of $A$ at $x$ if $x \in H$ and $H$ separates $\{x\}$ and $A$. Note that
+$x \in \partial A .$
+\subsection{Hypersurface}
+
+
+
+
+A Hypersurface is a manifold of dimension $(n-1)$, which is embedded in an ambient space of dimension n,generally a Euclidean space.
+\\
+    If M and N are differentiable manifolds such that $dim(M)-dim(N) = 1$ and if an immersion $f:N\rightarrow M$ is defined then $f(N)$ is a hypersurface in M, here f is a differentiable mapping whose differential \textbf{df} at any point  $x\in M$ is an injective mapping of the 
+     tangent space $N_{x}$ of N to  tangent space $M_{f(x)}$ of M at $f(x)$.
+    
+
+    
+    
+       Assume  Hypersurface $\Gamma$ is given locally by the $C^{1}$ mapping $\mathbf{x}: G \rightarrow \mathbf{R}^{n}$ of everywhere
+maximal rank, where $G$ is an open subset of $\mathbb{R}^{n-1} .$ So $\mathbf{x}=\mathbf{x}(u)$; and the vectors
+$$
+\partial \mathbf{x} / \partial u^{1}, \ldots, \partial \mathbf{x} / \partial u^{n-1} 
+$$
+are linear indepedent because  mapping $\mathbf{x}$ is of maximal rank and these vectors span the tangent space to $\Gamma$ at every $x(u)$\\
+
+
+\textbf{Hyperplane} is a subspace whose dimension is one less than that of its ambient space.
+In general, the word “hyperplane” refers to an $\{n-1\}$ dimensional flat in $R^{n}$
+
+
+
+
+
+   
+
+
+\subsection{Riemannian metric and First Fundamental Form}
+{Riemannian metric} of $\Gamma$ is given
+locally by the positive definite matrix $G(u),$ where
+$G=\left(g_{j k}\right), \quad g_{j k}=\frac{\partial \mathbf{x}}{\partial u^{j}} \cdot \frac{\partial \mathbf{x}}{\partial u^{k}}, \quad j, k=1, \ldots, n-1$ it is also called \textbf{First Fundamental Form.} \\
+   We use these Notation
+   $$G^{-1}=\left(g^{j k}\right)$$   $$g=\operatorname{det}{G}$$ And the associated surface area on  $\Gamma$ is given locally by $d A=\sqrt{g} d u^{1} \cdots d u^{n-1}$
+
+
+
+
+
+
+
+
+\subsection{Reimannian Divergence}
+Let $\Gamma$ is a $C^{2}$ hypersurface in $\mathbf{R}^{n}$,
+For any tangent vector field $\zeta$ along $\Gamma$, we can write 
+$
+\zeta=\sum_{j=1}^{n-1} \zeta^{j} \frac{\partial \mathbf{x}}{\partial u^{j}}
+$
+and for this its \textbf{Reimannian Divergence} is given by 
+$$\operatorname{div}_{\mathrm{r}} \boldsymbol{\zeta}=\frac{1}{\sqrt{g}} \sum_{j=1}^{n-1} \frac{\partial\left(\zeta^{j} \sqrt{\boldsymbol{g}}\right)}{\partial \boldsymbol{u}^{j}}$$
+
+
+     
+    
+    
+    
+
+
+
+    
+    
+    
+      For given any $(n-1)$ - dimensional domain $\Lambda \subset \Gamma$,  with $C^{1}$ boundary $\partial \Lambda,$ which is $(n-2)$-dimension and unit normal exterior vector field $\nu$ along $\partial \Lambda$, \textbf{Riemannian divergence theorem} is 
+      $\operatorname{div}_{\mathrm{r}} \zeta=\frac{1}{\sqrt{g}} \sum_{j=1}^{n-1} \frac{\partial\left(\zeta^{j} \sqrt{\boldsymbol{g}}\right)}{\partial \boldsymbol{u}^{j}}$
+      
+      
+      
+      \subsection{Second Fundamental Form} Second Fundamental Form of $\Gamma$ in $\mathbb{R}^{n}$ is given locally by 
+      
+      $$\boldsymbol{B}=\left(\boldsymbol{b}_{j k}\right), \quad b_{j k}=\frac{\partial^{2} \mathbf{x}}{\partial \boldsymbol{u}^{j} \partial \boldsymbol{u}^{k}} \cdot \mathbf{n}, \quad j, k=1, \ldots, \boldsymbol{n}-1 $$
+      
+      
+      $b_{j k}=\frac{\partial^{2} \mathbf{x}}{\partial u^{j} \partial u^{k}} \cdot \mathbf{n}=\frac{\partial}{\partial u^{j}}\left(\mathbf{n} \cdot \frac{\partial \mathbf{x}}{\partial u^{k}}\right)-\frac{\partial \mathbf{n}}{\partial u^{j}} \cdot \frac{\partial \mathbf{x}}{\partial u^{k}}=-\frac{\partial \mathbf{n}}{\partial u^{j}} \cdot \frac{\partial \mathbf{x}}{\partial u^{k}}$ \\\\
+      
+      
+       as $\boldsymbol{n}$ and $\frac{\partial u_{j}}{\partial x} $ are perpendicular
+      So it can also be written as 
+      $$ b_{j k} = -\frac{\partial \mathbf{n}}{\partial u^{j}} \cdot \frac{\partial \mathbf{x}}{\partial u^{k}} $$ where $\mathbf{n}$ is normal unit vector field along $\Gamma$
+      
+      
+      
+      The \textbf{Mean Curvature} $H$ of $\Gamma$ in $\mathbb{R}^{n}$ is the trace of $\mathcal{L} = G^{-1} B$, which is $\operatorname{tr} G^{-1} B$, the trace of $\mathcal{B}$ relative
+to $G,$ given by
+$
+\boldsymbol{H}=\operatorname{tr} G^{-1} B
+$ and \textbf{Gauss-Kronekar Curvature} is given by $\boldsymbol{K}=\operatorname{det} {G}^{-1} {B}$
+
+
+
+
+
+\section{Isoperimetric Inequality in domains with $C^{2}$ \\boundary} 
+
+In this section we will be studying isoperimetric Inequality in domains with $C^{2}$ boundary.Using classical arguments we show that if a domain gives a solution to $C^{2}$  Isoperiometric problem then it must be a diak and then to show if domain is extremal of Isoperimetric functional then it must be a disk.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Theorem}
+ Let $\Omega$ be a bounded domain in $\mathbb{R}^{n}$, with $C^{2}$ boundary $\Gamma$. Given
+any $C^{2}$ time-dependent vector field $X: \mathbf{R}^{n} \times \mathbb{R} \rightarrow \mathbb{R}^{n}$ on $\mathbf{R}^{n},$ let $\Phi_{t}: \mathbf{R}^{n} \rightarrow \mathbb{R}^{n}$
+denote the l-parameter flow determined by $X\\ \Phi_{t}$ and $X$ are related by $$\frac{d}{d t} \Phi_{t}(x)=X(x, t), \quad \Phi_{0}=\mathrm{id.}$$
+ and $$\xi(x)=X(x, 0), \quad \eta=\xi | \Gamma$$
+ Then 
+ \begin{center}
+      $${\textbf{(i)}}\ \left.\frac{d}{d t} \mathbf{V}\left(\Phi_{t}(\Omega)\right)\right|_{t=0}=\iint_{\Omega} \operatorname{div} \xi d \mathbf{v}_{n}=\int_{\Gamma} \boldsymbol{\eta} \cdot \mathbf{n} d A$$
+      
+%      \\\\ 
+ $${\textbf{(ii)}}\  \left.\frac{d}{d t} A\left(\Phi_{t}(\Gamma)\right)\right|_{t=0}=\int_{\Gamma}\left\{\operatorname{div}_{\Gamma} \boldsymbol{\eta}^{T}-H \boldsymbol{\eta} \cdot \mathbf{n}\right\} d \boldsymbol{A}=-\int_{\Gamma} H \boldsymbol{\eta} \cdot \mathbf{n} d \boldsymbol{A}$$ 
+ \end{center}
+
+ Where n is chosen to exterior normal vector field and ${\eta}^{T}$ is tangential part of  $\eta$.\\\\
+ 
+
+\textbf{Proof: {(i)} } \\
+If $J_{\phi}$, denotes the Jacobian marrix of $\Phi_{t}$.Then we have \\ 
+\begin{center}
+    $V\left(\Phi_{t}(\Omega)\right)=\iint_{\Omega} \operatorname{det} J_{\phi}(x) d v_{n}(x)$ \end{center} 
+    
+%    \\\\
+so we have 
+\\ \begin{center} 
+$$\frac{d}{d t} V\left(\Phi_{t}(\Omega)\right)=\iint_{\Omega}\left(\frac{d}{d t} \operatorname{det} J_{\phi}(x)\right) d v_{n}(x)$$
+\end{center}
+For any differentiable
+matrix function $t \mapsto \mathcal{A}(t),$ where $\mathcal{A}(t)$ is nonsingular we have 
+$$
+\frac{d}{d t} \operatorname{det} \mathcal{A}=\operatorname{det} \mathcal{A} \cdot \operatorname{tr}\left(\mathcal{A}^{-1} \frac{d \mathcal{A}}{d t}\right)
+$$ 
+Therefore 
+$$\frac{d}{d t} V\left(\Phi_{t}(\Omega)\right)=\iint_{\Omega}\left(\operatorname{det} J_{\phi_{t}}\right) \cdot \operatorname{tr}\left(J_{\phi_{t}^{-1}}\frac{d}{d t} J_{\phi_{t}}\right) d v_{n}(x)$$
+Now  $J_{\phi_{t}}$ is Jacobian matrix so $$\left(J_{\phi_{t}}\right)_{A}^{B}=\frac{\partial \Phi_{t}^{B}}{\partial x^{A}}, \quad A, B=1, \ldots, n$$\\
+and at $t = 0$ we have $\phi_{0}(x) = x$ or $\phi_{0}$ is identity so
+$$\left.\frac{\partial \Phi_{t}^{B}}{\partial x^{A}}\right|_{t=0}=\delta_{A}^{B}$$ where $\delta$ is kronekar delta.\\\\ 
+Furthermore 
+\begin{center}
+    $$\frac{d}{d t}\left(J_{\phi}\right)_{A}^{B}=\frac{\partial}{\partial t} \frac{\partial \Phi_{t} B}{\partial x^{A}}=\frac{\partial}{\partial x^{A}} \frac{\partial \Phi_{t}^{B}}{\partial t}$$
+\end{center}
+   and at $t=0$, which implies \\
+   \begin{center}
+       $\left.\frac{d}{d t}\left(J_{\phi}\right)_{A}^{B}\right|_{t=0}=\frac{\partial \xi^{B}}{\partial x^{A}}$\\
+   \end{center}
+
+ Since $\left.\frac{\partial \Phi_{t}^{B}}{\partial x^{A}}\right|_{t=0}=\delta_{A}^{B}$ so $J_{\phi_{t}}$ at $t = 0$ is an Identity matrix and so its inverse, and  $\operatorname{det} J_{\phi_{0}} = 1$\\\\ 
+ So $$\left.\frac{d}{d t} \mathbf{V}\left(\Phi_{t}(\Omega)\right)\right|_{t=0} = \iint_{\Omega}\operatorname{tr}\left(\frac{d}{d t} J_{\phi_{t}}\right) d v_{n}(x) = \iint_{\Omega} \operatorname{div} \xi d \mathbf{v}_{n}$$ \\
+ Now using divergence theorem we get \\\\ $$\left.\frac{d}{d t} V\left(\Phi_{t}(\Omega)\right)\right|_{t=0}=\iint_{\Omega} \operatorname{div} \xi d \mathbf{v}_{n}=\int_{\Gamma} \eta \cdot \mathbf{n} d A$$ \\\\
+ \textbf{Proof:{(ii)} }
+ Assume the surface $\Gamma$ is given locally by $\mathbf{x}=\mathbf{x}(u)$, and take
+$$
+\mathbf{y}(u, t)=\Phi_{t}(\mathbf{x}(u))
+$$
+Denote $\phi = \eta\cdot{n}$ and the Riemannian metric on $\Phi_{t}(\Gamma)$ for each fixed $t$ by
+$$
+h_{j k}=\frac{\partial \mathbf{y}}{\partial u^{j}} \cdot \frac{\partial \mathbf{y}}{\partial u^{k}}, \quad j, k=1, \ldots, n-1
+$$
+On $\Gamma$ with reimannian metric \textbf{G} and  $g=det(\textbf{G})$, associated surface area is given locally by \begin{center}
+    $d A=\sqrt{g} d u^{1} \cdots d u^{n-1}$
+\end{center}  So we have \\\\ 
+$$
+\frac{d}{d t} A\left(\Phi_{t}(\Gamma)\right)=\int_{\Gamma} \frac{\partial}{\partial t} \sqrt{\operatorname{det}\left(h_{j k}\right)} d u^{1} \cdots d u^{n-1}$$ \\\\
+In calculation of  derivative of $\sqrt{\operatorname{det}\left(h_{j k}\right)}$, set $\mathcal{H}=\left(h_{j k}\right), \mathcal{H}^{-1}=\left(h^{j k}\right) ;$ then \\\\
+$$
+\frac{\partial}{\partial t} \sqrt{\operatorname{det} \mathcal{H}}=\frac{1}{2}\{\sqrt{\operatorname{det} \mathcal{H}}\}^{-1} \operatorname{det} \mathcal{H} \cdot\left(\operatorname{tr} \mathcal{H}^{-1} \frac{\partial \mathcal{H}}{\partial t}\right)=\frac{1}{2} \sqrt{\operatorname{det} \mathcal{H}} \sum_{j, k}{h}^{j k} \frac{\partial h_{\boldsymbol{k} j}}{\partial t}$$  \\\\
+  using 
+  \begin{center}
+  $\frac{d}{d t} \operatorname{det} \mathcal{H}=\operatorname{det} \mathcal{H} \cdot \operatorname{tr}\left(\mathcal{H}^{-1} \frac{d \mathcal{H}}{d t}\right) $
+  
+%  \\\\    
+  \end{center} 
+%\\\\
+Now putting $h_{k j}=\frac{\partial \mathbf{y}}{\partial u^{k}} \cdot \frac{\partial \mathbf{y}}{\partial u^{j}}$ \\
+
+  
+
+$$\frac{\partial}{\partial t} \sqrt{\operatorname{det} \mathcal{H}}=\sqrt{\operatorname{det} \mathcal{H}} \sum_{j, \boldsymbol{k}} \boldsymbol{h}^{j k} \frac{\partial \mathbf{y}}{\partial \boldsymbol{u}^{k}} \cdot \frac{\partial}{\partial \boldsymbol{u}^{j}} \frac{\partial \mathbf{y}}{\partial t}$$
+
+  At t=0 ;  for  $\eta(u)=(\partial \mathbf{y} / \partial t)(u, 0)$, Along $\Gamma$, We can write  $$ \eta=\sum_{t=1}^{n-1} \eta^{\ell} \frac{\partial \mathbf{x}}{\partial u^{t}}+\phi \mathbf{n} $$\\
+where 
+$\phi = \eta\cdot{n}$, for t=0, $\mathbf{y}(u, 0)=\mathbf{x}(u)$ so $\mathcal{H}=G$ hence we have\\\\ 
+$$\left.\frac{\partial}{\partial t} \sqrt{\operatorname{det} \mathcal{H}}\right|_{t=0}=\sqrt{\operatorname{det} G} \sum_{j, k} g^{j k} \frac{\partial \mathbf{x}}{\partial u^{k}} \cdot \frac{\partial \eta}{\partial u^{j}}$$ and \\\\
+$$\frac{\partial \boldsymbol{\eta}}{\partial \boldsymbol{u}^{j}}=\sum_{l=1}^{n-1}\left\{\frac{\partial \eta^{l}}{\partial \boldsymbol{u}^{j}} \frac{\partial \mathbf{x}}{\partial \boldsymbol{u}^{l}}+\eta^{\ell} \frac{\partial^{2} \mathbf{x}}{\partial \boldsymbol{u}^{j} \partial \boldsymbol{u}^{l}}\right\}+\frac{\partial \boldsymbol{\phi}}{\partial \boldsymbol{u}^{j}} \mathbf{n}+\boldsymbol{\phi} \frac{\partial \mathbf{n}}{\partial \boldsymbol{u}^{j}}$$ \\\\
+
+So since $\mathbf{n}$ is perpendicular to $\partial \mathbf{x} / \partial u^{k}$ for all $k=1, \ldots, n-1$
+\\\\
+$$\sum_{j, k} g^{j k} \frac{\partial \mathbf{x}}{\partial u^{k}} \cdot \frac{\partial \eta}{\partial u^{j}}=\sum_{j, k} g^{j k} \frac{\partial \mathbf{x}}{\partial u^{k}} \cdot\left(\sum_{\ell=1}^{n-1}\left\{\frac{\partial \eta^{\ell}}{\partial u^{j}} \frac{\partial \mathbf{x}}{\partial u^{\ell}}+\eta^{\ell} \frac{\partial^{2} \mathbf{x}}{\partial u^{\ell} \partial u^{j}}\right\}+\phi \frac{\partial \mathbf{n}}{\partial u^{j}}\right)$$ \\\\
+$${=\sum_{j, k, \ell} g^{j k} g_{k \ell} \frac{\partial \eta^{\ell}}{\partial u^{j}}+\sum_{j, k, \ell} g^{j k} \eta^{\ell}
+\frac{\partial \mathbf{x}}{\partial u^{k}} \cdot \frac{\partial^{2} \mathbf{x}}{\partial {u}^{\ell}} {\partial {u}^{j}}+\sum_{j, k} \phi g^{j k} \frac{\partial \mathbf{x}}{\partial{u}^{k}} \cdot \frac{\partial \mathbf{n}}{\partial{u}^{j}}} $$
+\\\\
+$${=\sum_{j} \frac{\partial \eta^{j}}{\partial{u}^{j}}+\sum_{j} \eta^{j} \frac{1}{2} \mathbf{tr}\left({G}^{-1} \frac{\partial G}{\partial {u}^{j}}\right)+\sum_{j, k} \phi{g}^{j k} \frac{\partial \mathbf{x}}{\partial {u}^{k}} \cdot \frac{\partial \mathbf{n}}{\partial{u}^{j}}}$$  \\\\
+$$=\sum_{j} \frac{1}{\sqrt{g}} \frac{\partial\left(\eta^{j} \sqrt{g}\right)}{\partial u^{j}}+\sum_{j, k} \phi g^{j k} \frac{\partial \mathbf{x}}{\partial u^{k}} \cdot \frac{\partial \mathbf{n}}{\partial u^{j}}$$ \\\\
+
+
+
+
+$$
+{=\operatorname{div}_{\mathbf{\Gamma}} {\eta}^{T}-{\phi}{H}}
+$$
+
+So we have \\
+$$
+\left.\frac{d}{d t} A\left(\Phi_{t}(\Gamma)\right)\right|_{t=0}=\int_{\Gamma}\left\{\operatorname{div}_{r} \boldsymbol{\eta}^{T}-H \boldsymbol{\eta} \cdot \mathbf{n}\right\} d \boldsymbol{A}
+ $$ \\
+
+
+
+
+Now since $\Gamma$ is closed and has no boundary Therefore, $$\int_{\Gamma}div_{\Gamma}\eta^{T}d\textbf{A} = 0$$
+so \\\\
+    $$\left.\frac{d}{d t} A\left(\Phi_{t}(\Gamma)\right)|_{t=0}=\int_{\Gamma}\left\{\operatorname{div}_{r} \boldsymbol{\eta}^{T}-H \boldsymbol{\eta} \cdot \mathbf{n}\right\} d \boldsymbol{A}= -\int_{\Gamma}H \boldsymbol{\eta} \cdot \mathbf{n}\right\} d \boldsymbol{A}$$     \\\\
+
+
+ \subsection{$C^{k}$ Isoperimetric problem}
+    Let $\Omega$ be a bounded domain in $R^{n}$, with $C^{k}$ boundary, $k \geq 1 .$ We
+say that $\Omega$ is a solution to the $C^{k}$ isoperimetric problem if, for any domain $D$
+with $C^{k}$ boundary and volume equal to that of $\Omega,$ we have $A(\partial D) \geq A(\partial \Omega) .$
+\\
+
+
+
+
+We say that $\Omega$ is a
+$C^{k}$ extremal of the isoperimetric functional if, for any 1 -parameter family of
+$C^{k}$ diffeomorphisms $\Phi_{t}: \mathbf{R}^{n} \rightarrow \mathbf{R}^{n}$ satisfying $V\left(\Phi_{t}(\Omega)\right)=V(\Omega)$ for all $t,$ we
+have
+$$
+\left.\frac{d}{d t} A\left(\Phi_{t}(\partial \Omega)\right)\right|_{t=0}=0
+$$
+
+
+\subsection{Theorem}
+
+  Assume that $\Omega$ is a solution to the $C^{2}$ isoperimetric problem,
+with volume of $\Omega$ equal that of the unit $n$ -disk in $\mathbb{R}^{n}$. Then the mean curvature
+H of $\Gamma$ satisfies
+$$
+-H \leq n-1
+$$
+on all of $\Gamma$.
+
+\textbf{Proof:}\\\\
+Consider the Isoperimetric functional
+$$
+J(D)=\frac{A(\partial D)}{V(D)^{1-1 / n}}
+$$
+where D varies over bounded domains in $R^{n}$ having $C^{2}$ boundary.
+As in above theorem We have $\phi_{t}$, 1-parameter family of diffeomorphism of $\mathbb{R}^{n},$ with corresponding time-dependent vector field $$\boldsymbol{X} = \boldsymbol{X}(x, t)$$ and at time zero, $$\boldsymbol{\xi}(\boldsymbol{x})=\boldsymbol{X}(\boldsymbol{x}, \boldsymbol{0})$$ and  restrcting on its boundary,         $$\boldsymbol{\eta}=\boldsymbol{\xi} | \Gamma $$
+As $\omega$ is a solution to the  $C^{2}$ Isoperimetric problem, $\Omega$ will minimize the isoperimetric functional $J(D)$ so we have
+
+
+$$\left.\frac{d}{d t} J\left(\Phi_{t}(\Omega)\right)\right|_{t=0} = 0 $$ \\ 
+Now on differenciating $J(\Phi_{t}(\Omega))$ with respect to t,
+we get \\\\
+$$\left.\frac{d}{d t} J\left(\Phi_{t}(\Omega)\right)\right|_{t=0} =  -\frac{1}{V(\Omega)^{1-1 / n}} \int_{\Gamma} H \eta \cdot \mathbf{n} d A+\left(\frac{1}{n}-1\right) \frac{A(\Gamma)}{V(\Omega)^{2-1 / n}} \int_{\Gamma} \eta \cdot \mathbf{n} d A 
+$$ \\\\
+which implies \\\\
+$$
+-\frac{\int_{\Gamma} H \eta \cdot \mathbf{n} d A}{\int_{\Gamma} \eta \cdot \mathbf{n} d A}=\frac{n-1}{n} \frac{A(\Gamma)}{V(\Omega)}
+$$
+Now $\Omega$ has its $V(\Omega) = \omega_{n}$ we should have $A(\Gamma) \leq c_{n-1}$ since $\Omega $ is solution of Isoperimetric Problem \\
+ recall that $$ \omega_{\mathbf{n}}=\frac{\mathbf{c}_{\mathbf{n}-1}}{n}$$ 
+ together  implies 
+$$ -\frac{\int_{\Gamma} H \eta \cdot \mathbf{n} d \boldsymbol{A}}{\int_{\Gamma} \boldsymbol{\eta} \cdot \mathbf{n} d \boldsymbol{A}} \leq \boldsymbol{n}-1 $$
+ 
+ let $\phi$ be a nonnegative $C^{\infty}$ function for any $w_{0} \in \Gamma,$ compactly supported on a neighborhood of $w_{0}$ in $\mathbb{R}^{n}$.
+ Choosing a perticular $X(x, t)$ which is time-independent to  simplify above expression, 
+$$
+X(x, t)=\phi(x) \mathbf{n}_{u_{0}}
+$$
+and now picking $\phi$ with sufficiently small support about $w_{o}$ we get left hand side of expression to be 
+
+$ -H\left(w_{0})\right )$
+
+  and that finally gives $$ -H(w_{0})\leq n-1 $$ for any $ \omega_{0} \in \Gamma$ hence it is proved on all of $\Gamma$ 
+
+
+
+
+
+
+\subsection{Theorem}
+Assume $\Omega$ is a bounded domain in $\mathbf{R}^{n}$, with $C^{2}$ boundary $\Gamma$
+and $\mathbf{n}$, its exterior normal unit vector field along $\Gamma$. Assume the mean curvature
+$H$ of $\Gamma$ satisfes
+$$
+-H \leq n-1
+$$
+along all of $\Gamma$. Then
+$$
+A(\Gamma) \geq \mathfrak{c}_{\mathfrak{n}-1}
+$$
+with equality if and only if $\Omega$ is an disk in $\mathbb{R}^{n}$ \\\\
+\textbf{Proof:} \\ 
+
+ Let $\Omega$ with its boundary,  $\bar{\Omega} =\Omega \cup \Gamma,$ and denote its convex hull  $\mathcal{C}$  and denote the boundary of $\mathcal{C}$  to $\Sigma=\partial \mathcal{C}$ 
+
+Let $w \in \Sigma \backslash(\Sigma \cap \Gamma),$ T asupporting hyperplane of $\mathcal{C}$ at $w$. (See Figure II. $1.1 .$ ) Then there exists an $x \in \Pi \cap(\Sigma \cap \Gamma)$ (if not, then $\mathcal{C}$ would not be the smallest convex set containing $\bar{\Omega}$ ), which implies (a) $\Pi$ is the tangent hyperplane to $\Gamma$
+at $x,$ and $(b)$ the line segment $w x$ is contained in $\Pi$. These two imply that $\Pi$ is the unique supporting hyperplane to $\mathcal{C}$ at every point of $u x,$ except possibly at
+w. If $\Pi$ were not the unique supporting hyperplane of $\mathcal{C}$ at $w$, then $\Sigma$ would have a conical singularity at $w,$ which would imply that $\mathcal{C}$ is not the minimal convex set containing $\bar{\Omega}$. Therefore, every point of $\Sigma$ has a unique supporting hyperplane, that is, $\boldsymbol{\Sigma}$ is everywhere differentiable.
+
+
+
+\subsection{Theorem}
+ Let $\Omega$ be a bounded domain in $\mathbb{R}^{n}$ with $C^{2}$ boundary, that is an extremal of the $C^{2}$ isoperimetric functional. Then  $\partial \Omega$ has constant mean curvature.
+
+\textbf{Proof: }  
+
+We denote 
+$\phi = \eta\cdot{n}$,
+by first part of the above theorem \\ 
+
+and by second part of above theorem 
+$$\int_{\Gamma} \phi H d A=0$$
+
+Thus we have \\
+
+\begin{center}
+   $ \int_{\Gamma} \phi H d A=0 \forall \phi \text { such that } \int_{\Gamma} \phi d A=0$ \\ 
+\end{center}
+from here H will be a constant 
+
+\chapter{Isoperimetric Inequality in Convext Subsets of $\mathbf{R}^{n}$ }
+\section{Convex Sets and its properties } 
+we take structure of  $\mathbb{R}^n$ as a vector space 
+For $ A \subset \mathbb{R}^n$ we call A, a \textbf{Convex} set  if for $\alpha \in [0,1]$ we have $\alpha x +(1- \alpha)y \in A $ for each  $x, y \in A.$  i.e. line segment joining x and y in A belongs inside A.\\
+\begin{itemize}
+    \item  For example open and closed line segments joining x and y in $\mathbb{R}^n$ are convex sets in $\mathbb{R}^n$
+
+\item  
+
+ Ball of radius $r \geq 0$,  $B (r):=\left\{x \in \mathbb{R}^{n}:\|x\| \leq r\right\}$,  and its translates
+ 
+ \end{itemize}
+
+ For two points $x,y \in A$ and for $\alpha \in [0,1]$, $\alpha x +(1- \alpha)y  $ is called \textbf{Convex combination} of x and y and its generalisation for any number of  points is following. \\
+
+Let $k \in \mathbb{N},$ let $x_{1}, \ldots, x_{k} \in \mathbb{R}^{n},$ and let $\alpha_{1}, \ldots, \alpha_{k} \in[0,1]$ with $\alpha_{1}+\ldots+\alpha_{k}=1,$ then
+$\alpha_{1} x_{1}+\cdots+\alpha_{k} x_{k}$ is called a \textbf{Convex combination} of the points $x_{1}, \ldots, x_{k}$
+
+\begin{theorem}
+$A$ set $A \subset \mathbb{R}^{n}$ is convex, if and only if all convex combinations of points in A lie
+in $A$.
+\end{theorem}
+
+\begin{proof}
+
+ Assume $A$ is convex and $k \in \mathbb{N} .$ We will be using induction on $k$ \\ for $k=1,$ induction step is trivial  . For the step from $k-1$ to $k, k \geq 2,$ assume $x_{1}, \ldots, x_{k} \in A$ and $\alpha_{1}, \ldots, \alpha_{k} \in[0,1]$ with $\alpha_{1}+\ldots+\alpha_{k}=1 .$ We may assume $\alpha_{k}$ is not 0 or 1.\\ and define 
+$$
+\beta_{i}:=\frac{\alpha_{i}}{1-\alpha_{k}}, \quad i=1, \ldots, k-1
+$$
+hence $\beta_{i} \in[0,1]$ and $\beta_{1}+\ldots+\beta_{k-1}=1 .$ By the induction hypothesis, $\beta_{1} x_{1}+\ldots+\beta_{k-1} x_{k-1} \in A$
+and by the convexity
+$$
+\sum_{i=1}^{k} \alpha_{i} x_{i}=\left(1-\alpha_{k}\right)\left(\sum_{i=1}^{k-1} \beta_{i} x_{i}\right)+\alpha_{k} x_{k} \in A
+$$
+hence done for first side\\
+for the other direction, if all convex combinations of points in A lie in A then on just taking $k =2$ condition for convex set will be satisfied.\\
+
+\end{proof}.
+
+\subsection{Definition}
+For a arbitrary family  $\left\{A_{i}: i \in I\right\}$ of convex sets in   $\mathbb{R}^{n}$, its intersection $\bigcap_{i \in I} A_{i}$ is also a convex set in $\mathbb{R}^{n}$  for a given set $A \subset \mathbb{R}^{n}$.\\ Intersection of all convex sets containing $A$ is called its  \textbf{Convex Hull} and is denoted by  \textbf{conv A}.\\
+ Intuitively Convex hull of $A$  is the smallest convex set containing $A$ which fills its non convex parts and turns out to be set of all convex combinations of points of $A$ which is following theorem.
+ 
+ 
+\begin{theorem}
+For  any $A \subset \mathbb{R}^n$
+ $$ \operatorname{conv} A=\left\{\sum_{i=1}^{k} \alpha_{i} x_{i}: k \in \mathbb{N}, x_{1}, \ldots, x_{k} \in A, \alpha_{1}, \ldots, \alpha_{k} \in[0,1], \sum_{i=1}^{k} \alpha_{i}=1\right\} $$
+
+ \begin{proof}
+ Let us denote $$ B = \left\{\sum_{i=1}^{k} \alpha_{i} x_{i}: k \in \mathbb{N}, x_{1}, \ldots, x_{k} \in A, \alpha_{1}, \ldots, \alpha_{k} \in[0,1], \sum_{i=1}^{k} \alpha_{i}=1\right\} $$  which is expression on the right hand side of theorem.\\\\
+ \textbf{(i)}  $ \mathbf{B} \subset \mathbf{\operatorname{conv} A}  $\\\\
+     For any arbitrary convex set $C \supset A$, on considering previous Theorem 3.1.1 for convex set C, all convex combinations of points in C should lie in C so all convex combinations of points of A (subset of  C) will definitely lie inside C. \\ 
+ So we would have $B\subset C $ for all such C and now since  $\operatorname{conv} A $ is intersection of all such convex sets like C containing A we will have  $ B \subset \operatorname{conv} A.  $  
+ 
+ \textbf{(ii)}  $ \mathbf{B} \supset \mathbf{\operatorname{conv} A}  $\\\\
+ We claim that B is convex set since for any two elements $\alpha_{1} x_{1}+\cdots+\alpha_{k} x_{k}$ and \\ $\gamma_{1} y_{1}+\cdots+\gamma_{m} y_{m}$  of B \\
+ we have 
+ 
+ 
+\begin{multline}
+         \beta\left(\alpha_{1} x_{1}\right)  \left(\cdots+\alpha_{k} x_{k} \right) +(1-\beta)\left(\gamma_{1} y_{1}+\cdots+\gamma_{m} y_{m}\right) \\ = \beta \alpha_{1} x_{1}+\cdots+\beta \alpha_{k} x_{k}+(1-\beta) \gamma_{1} y_{1}+\cdots+(1-\beta) \gamma_{m} y_{m}  
+\end{multline}
+ 
+ where  $x_{i}, y_{j} \in A$ and coefficients $\beta, \alpha_{i}, \gamma_{j} \in[0,1]$ with  condition $\alpha_{1}+\ldots+\alpha_{k}=1$ and $\gamma_{1}+\ldots+\gamma_{m}=1$ 
+
+hence we have \\
+$
+\beta \alpha_{1}+\ldots+\beta \alpha_{k}+(1-\beta) \gamma_{1}+\cdots+(1-\beta) \gamma_{m}=\beta+(1-\beta)=1
+$
+Now since $ B \supset A $ and B is convex set and $\operatorname{c}$
+ 
+we have  $ \mathbf{B} \supset \mathbf{\operatorname{conv} A}  $ \par
+ Hence from (i) and (ii) we are done. \\
+ We also have $A = \operatorname{conv} A$ iff A is a convex set as smallest convex set containing A will be itself A. \\
+
+ \end{proof}
+ 
+\end{theorem}
+
+\subsection{Definition}
+We define linear combination $\alpha A+\beta B$ of two sets A and B $\in \mathbb{R}^n$ to be 
+$\alpha A+\beta B:=\{\alpha x+\beta y: x \in A, y \in B\}$ where $\alpha,\beta \in \mathbb{R}$.
+This combination is also called Minkowski addition.
+
+
+\begin{itemize}
+    \item $\alpha A+\beta B $ is also convex if A and B are. 
+\item
+Generally for any set A, $A +A = 2A $ and A - A = 0  does not hold but in case when A is a convex set it holds and 
+ for $\alpha, \beta \geq 0,$ we also have $\alpha A+\beta A=(\alpha+\beta) A,$ because of convex property. \end{itemize}
+
+Some basic terms are defined below 
+\begin{itemize}
+
+\item
+Intersection of finitely many closed half -spaces  is called \textbf{Polyhedral Set} \par or Polyhedron
+ where half-spaces are defined as $\{ x : a^{T}x \leq b\} $  where a is non-zero vector in $\mathbb{R}^n$ and b is another vector in  $\mathbb{R}^n.$    \par Polyhedral sets are closed as they are intersection of closed half-spaces and also they are convex as each half space is convex as for $a^{T} x_{1} \leq b, a^{T} x_{2} \leq b$ \par
+ we have 
+ 
+ $a^{T}\left(\alpha +(1- \alpha) x_{2}\right)=\alpha a^{T} x_{1}+(1-\alpha) a^{T} x_{2} \leq b$ \par
+  for $x_{1} $ and $x_{2}$ in half space and   and intersection of convex sets is convex.  
+  \item
+Convex hull of finitely many points $x_1,\ldots ,x_k \in \mathbb{R}^n $ is called \textbf{Convex Polytope.} 
+Every convex polytope is a polyhedron but other side is not true
+\par
+ For example convex hull of 4 distinct points in space is tetrahedron, and of vertices of cube is cube itself 
+\par For a polytope P its \textbf{Vertex} is defined as point $x \in P$ for which $P \backslash \{x\} $ is  still convex and P is convex combination of its vertices which is  the next theorem. 
+ 
+\item
+$x_1,\ldots ,x_k \in \mathbb{R}^n $ are called affinely independent if vectors 
+ $x_{2} - x_{1}, \ldots  x_{k} - x_{1} $ are linearly independent.
+
+\item
+ \textbf{Simplex} is the the convex hull of affinely independent points and \par 
+  an \textbf{r-Simplex} is the convex hull of $r+ 1$ affinely independent points. \\\\
+  
+\end{itemize}
+
+\begin{theorem}
+
+Let $P$ be a polytope in $\mathbb{R}^{n},$ and let $x_{1}, \ldots, x_{k} \in \mathbb{R}^{n}$ be distinct points.\par
+(a) If $P=\operatorname{conv}\left\{x_{1}, \ldots, x_{k}\right\},$ then $x_{1}$ is a vertex of $P,$ if and only if $x_{1} \notin \operatorname{conv}\left\{x_{2}, \ldots, x_{k}\right\}$ \par
+(b) $P$ is the convex hull of its vertices. \\\\
+
+\begin{proof}
+
+\textbf{(a)}  \par 
+
+
+ If  $x_{1}$ is a vertex of $P $ then  from definition of vertex, $P \backslash\left\{x_{1}\right\}$ will be convex and $x_{1} \notin P \backslash\left\{x_{1}\right\} .$ Hence we have  $\operatorname{conv}\left\{x_{2}, \ldots, x_{k}\right\} \subset P \backslash\left\{x_{1}\right\},$ 
+ \par 
+ so  $x_{1} \notin \operatorname{conv}\left\{x_{2}, \ldots, x_{k}\right\}$ \\\\
+For the other direction, on assuming that $x_{1} \notin \operatorname{conv}\left\{x_{2}, \ldots, x_{k}\right\} .$ and provided that  $x_{1}$ is not a vertex of $P,$ there exist distinct points $a, b \in P \backslash\left\{x_{1}\right\}$ and $\lambda \in(0,1)$ such that $x_{1}=(1-\lambda) a+\lambda b .$ 
+
+As  $P=\operatorname{conv}\left\{x_{1}, \ldots, x_{k}\right\},$ a and b can be written as convex linear combination of $x_{1},\ldots ,x_{k} $   so there should exist $k \in \mathbb{N}, \mu_{1}, \ldots, \mu_{k} \in[0,1]$ and $\tau_{1}, \ldots, \tau_{k} \in[0,1]$ with $\mu_{1}+\ldots+\mu_{k}=1$ and $\tau_{1}+\ldots+\tau_{k}=1$
+such that $\mu_{1}, \tau_{1} \neq 1$ and \par
+\begin{equation}
+a=\sum_{i=1}^{k} \mu_{i} x_{i}, \quad b=\sum_{i=1}^{k} \tau_{i} x_{i}
+\end{equation}  
+as $x_{1}=(1-\lambda) a+\lambda b .$ we get on putting values of a and b 
+
+\begin{equation} 
+x_{1}=\sum_{i=1}^{k}\left((1-\lambda) \mu_{i}+\lambda \tau_{i}\right) x_{i}
+\end{equation}
+that finally give 
+\begin{equation} 
+x_{1}=\sum_{i=2}^{k} \frac{(1-\lambda) \mu_{i}+\lambda \tau_{i}}{1-(1-\lambda) \mu_{1}-\lambda \tau_{1}} x_{i}
+\end{equation}
+where $(1-\lambda) \mu_{1}+\lambda \tau_{1} \neq 1$ \par
+ so $x_{1}$ is written as a convex combination of $x_{2}, \ldots, x_{k}$ in last equation, which is  a contradiction.
+\\\\\\
+\textbf{(b)}  For $P=\operatorname{conv}\left\{x_{1}, \ldots, x_{k}\right\}$ we can remove points  which are not vertex  
+one by one and this will not change convex hull and will be equal to P as removed points can be written as convex combination of other remaining vertex points. \\
+If $x$ is a vertex of P but $x \notin \left\{x_{1}, \ldots, x_{k}\right\} $ then P would be,
+$P=\operatorname{conv}\left\{x,x_{1}, \ldots, x_{k}\right\}$ 
+which implies that x can not be written as convex combination of $x_{1}, \ldots x_{k}$ \\ i.e. 
+ $x \notin  \operatorname{conv} \left\{x_{1}, \ldots, x_{k}\right\} = P  $ so $x \notin P$ that gives contradiction.\par
+ Hence P is the convex hull of its vertices.
+\end{proof}
+
+
+\end{theorem}
+
+
+
+
+
+
+
+
+
+
+\end{document}
