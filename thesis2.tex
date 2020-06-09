@@ -1561,8 +1561,9 @@ V\left(K_{1}^{(j)}, \ldots, K_{n}^{(j)}\right) \rightarrow V\left(K_{1}, \ldots,
  is concave for $ K, L \in \mathcal{K}^n $.
 We will get inequalities for mixed volumes, and as a consequence also get the famous isoperimetric inequality from concavity of above function
 \\\\
-We will be using result of this lemma further for proving Brunn-Minkowski Theorem
+We will be using result of this following lemma further for proving Brunn-Minkowski Theorem
 \begin{lemma} 
+\label{l:1}
 For $a \in(0,1)$ and $r, s, t>0$
 \[
 \left(\frac{a}{r}+\frac{1-a}{s}\right)\left[a r^{t}+(1-a) s^{t}\right]^{\frac{1}{t}} \geq 1
@@ -1596,27 +1597,108 @@ $$\quad = 0$$
  
  
  
- \begin{theorem}
- \label{t:11}
- (\textbf{Brunn-Minkowski Theorem})
  
+ 
+ 
+ \begin{theorem}(\textbf{Brunn-Minkowski Theorem})
+ \label{thm:20}
 For convex bodies $J, K \in \mathcal{K}^{n}$ and $a \in(0,1)$
 \begin{equation}
 \label{eq54}
 \sqrt[n]{V(a J+(1-a) K)} \geq a \sqrt[n]{V(J)}+(1-a) \sqrt[n]{V(K)}
 \end{equation} \label{eq:4.19}
-with equality, iff $J$ and $K$ lie in parallel hyperplanes or $J$ and $K$ are homothetic( in \ref{def:2.1})
+with equality, iff $J$ and $K$ lie in parallel hyperplanes or $J$ and $K$ are homothetic( see \ref{def:2.1})
   \end{theorem}
 \begin{proof}
-Proof. We distinguish four cases.
-Case $1: K$ and $L$ lie in parallel hyperplanes. Then also $\alpha K+(1-\alpha) L$ lies in a hyperplane, and hence $V(K)=V(L)=0$ and $V(\alpha K+(1-\alpha) L)=0$
-Case 2: We have $\operatorname{dim} K \leq n-1$ and $\operatorname{dim} L \leq n-1,$ but $K$ and $L$ do not lie in parallel hyperplanes, i.e. $\operatorname{dim}(K+L)=n .$ Then $\operatorname{dim}(\alpha K+(1-\alpha) L)=n,$ for all $\alpha \in(0,1)$, hence
+Based on the dimension of the convex body, we consider 4 cases.
+ \hfill \break
  
- 
- \end{proof}
- 
- 
- Similarly, For K
+\textbf{Case 1} $: \quad \text{When } J$ and $K$ lie in parallel hyperplanes. Then  $a J+(1-) K$  also lies in a hyperplane,\quad so that $$V(J)=V(K)=0$$    $$\text{and also}$$ $$V(a J+(1-a) K)=0$$
+ hence done for this case.
+ \hfill \break
+\textbf{Case 2}: \quad  When $\operatorname{dim} J \leq n-1$ and $\operatorname{dim} K \leq n-1,$ but $J$ and $K$ do not lie in parallel hyperplanes, for all $a \in(0,1)$, $\operatorname{dim}(J+K)=n .$ and hence  $\operatorname{dim}(a J+(1-a) K)=n \text{ also }.$ 
+\hfill \break
+$V(J) = V(K)= 0$ as $\operatorname{dim} J,K \leq n-1 $ Therefore for all $a \in(0,1)$
+ $$
+a \sqrt[n]{V(J)}+(1-a) \sqrt[n]{V(K)}=0 \leq \sqrt[n]{V(a J+(1-a) K)}
+$$
+\hfill \break
+\textbf{Case 3}: \quad  When $\operatorname{dim } J \leq n-1$ and $\operatorname{dim} K=n$ or vice versa
+\hfill \break 
+Then, for $x \in J,$ we get
+\[
+a x+(1-a) K \subset a K+(1-a) K
+\]
+and Consequently
+\[
+(1-a)^{n} V(K)=V(a x+(1-a) K) 
+\]
+as adding a point $a x $ is translation of $(1-a) K$ and won't effect Volume. 
+and
+$$ V(a x+(1-a) K) \leq V(a 
+J+(1-a) K)$$
+and equality occur, iff $J=\{x\}$ 
+\hfill \break
+\textbf{Case 4}:When $\operatorname{dim} J=\operatorname{dim} K=n .$  We are allowed to take $V(J)=V(K)=1 .$ as for general $J, K,$  we  can take
+\[
+  \widetilde{J}:=\frac{1}{\sqrt[n]{V(J)}} J, \quad \widetilde{K}:=\frac{1}{\sqrt[n]{V(K)}} K
+\]
+and
+\[
+\widetilde{a}:=\frac{a \sqrt[n]{V(J)}}{a \sqrt[n]{V(J)}+(1-a) \sqrt[n]{V(K)}}
+\]
+Then we have
+\[
+    \sqrt[n]{V({\widetildea \widetilde{ J} }+(1-\widetilde{a}) \widetilde{K})} \geq 1
+\]
+Now  as $V(\widetilde{J}) = V(\widetilde{K})$ = 1 so $$\sqrt[n]{V(J)}+(1-a) \sqrt[n]{V(K)}=a+(1-a)=1$$
+hence $\widetilde{J}$ and $\widetilde{K}$
+follow the BRUNN-MINKOWSKI Theorem,  and also, $J$ and $K$ are homothetic, iff $\widetilde{J}$ and $\widetilde{K}$ are homothetic.Therefore,Now  we have to just prove that given condition that $V(J)=V(K)=1$, We have 
+\[
+V(a J+(1-a) K) \geq 1
+\]
+with equality iff $J, K$ are translates of each other.
+\\
+ We define centre of gravity for an $n$ -dimensional convex body $S$ to be the point $c \in \mathbb{R}^{n}$ such that
+\[
+\langle c, u\rangle=\frac{1}{V(M)} \int_{S}\langle x, u\rangle d x
+\]
+for all $u \in S^{n-1} .$ \newpage
+By translating  $J$ and $K$ we can have their centre of gravity at 0 as the Volume is translation invariant,the equality case then just reduces to claim hat $K=L$
+\hfill \break
+Now by induction on $n$, We prove  BRUNN-MINKOWSKI Theorem 
+\hfill \break
+For $n=1$, 1 - dimensional volume is linear so Brunn-Minkowski inequality easily follows 
+\hfill \break 
+Along with above conclusion we also get that equality corresponds to the fact that two convex bodies (which are compact intervals in $\mathbb{R}$), in $\mathbb{R}$  are homothetic.
+\hfill \break 
+Now for $n \geq 2$ if the Brunn-Minkowski theorem is true in dimension $n-1 $
+\\
+we choose a unit vector $u \in S^{n-1}$ and denote 
+the hyperplane $E_{\lambda}$ in the direction $u$ with  distance(signed) $\lambda \in \mathbb{R} $ from the origin defined by 
+\[
+E_{\lambda}:=\{x:\langle\ x, u\rangle=\lambda\}, 
+\]
+Now since by Fubini's theorem  
+\[
+V(K \cap\{x: \langlex x, u\rangle \leq \beta\})=\int_{-h_{ K(-u)}}^{\beta} v\left(K \cap E_{\lambda}\right) d \lambda
+\] 
+The function
+\[
+g:\left[-h_{K}(-u), h_{K}(u)\right] \rightarrow[0,1], \quad \gamma \mapsto V(K \cap\{x:\langle x, u\rangle \leq  \gamma \}
+\]
+would be  continuous and strictly increasing\\
+where $-h_{K}(-u), h_{K}(u)$ are support function of K at $u$ and $-u$ and are extreme upper point and extreme lower point respectively.
+\hfill \break
+  Map $\lambda \mapsto v\left(K \cap E_{\lambda}\right)$ is continuous on $\left(-h_{K}(-u), h_{K}(u)\right),$ where $v$ is area functional.
+  %some doubt in v is  area measure 
+   $g$ is differentiable function on $\left(-h_{K}(-u), h_{K}(u)\right)$ and $$g^{\prime}(\beta)=v\left(K \cap E_{\beta}\right)$$
+  \\
+  since $g$ is invertible, inverse function of $g$, $ \gamma:[0,1] \rightarrow\left[-h_{K}(-u), h_{K}(u)\right],$ which is also a continuous function and strictly increasing  function satisfies $ \gamma(0)=-h_{K}(-u),  \gamma(1)=h_{K}(u)$ and
+\[
+ \gamma^{\prime}(\tau)=\frac{1}{g^{\prime}( \gamma(\tau))}=\frac{1}{v\left(K \cap E_{ \gamma(\tau)}\right)}, \quad  \text{where } \tau \in(0,1)
+\]
+Similarly, For K
 The function
 \[
 f:\left[-h_{K}(-u), h_{K}(u)\right] \rightarrow[0,1], \quad \delta \mapsto V(K \cap\{x:\langle x, u\rangle \leq  \delta \}
@@ -1761,8 +1843,6 @@ V(K)^{\frac{1}{n}-1} \cdot n V(K, \ldots, K, L) \geq V(K+L)^{\frac{1}{n}}-V(K)^{
 \]
 where we used the Brunn-Minkowski inequality in the end (with $t=\frac{1}{2}$ ). This implies the assertion. Equality holds if and only if equality holds in the Brunn-Minkowski inequality, which yields that $K$ and $L$ are homothetic.      
  \end{proof}     
- 
- 
  
  
  
