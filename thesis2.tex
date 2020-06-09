@@ -1,48 +1,90 @@
 \documentclass[oneside]{book}
-%\documentclass[fopenany]{book}
+%\documentclass[openany]{book}
 %\documentclass{book}
-\usepackage[utf8]{inputenc}
-\usepackage{csquotes}
+
 \usepackage{graphicx}
+
 \usepackage{amsmath}
 \usepackage{mathtools}
 \usepackage{amssymb}
 \usepackage{comment}
+
 \usepackage{amsthm}
 \usepackage[T1]{fontenc}
 \usepackage{libertine}
-\usepackage{hyperref}
-\hypersetup{
-    colorlinks=true,% make the links colored
-}
 
-\usepackage{float}
 \usepackage[english]{babel}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{corollary}{Corollary}[theorem]
 \newtheorem{lemma}[theorem]{Lemma}
-\theoremstyle{definition}
-\newtheorem{mydef}{Definition}[chapter]
+\newtheorem{mydef}{Definition}
 \newtheorem{exmp}{Example}
 \newtheorem{prop}{Proposition}
-\title{Isoperimetric Inequality}
-\author{Prashant Kumar}
-\date{\today}
 
-\begin{document}
-\maketitle
+\date{\today}
+\usepackage{lmodern}
+
+
+
+\usepackage{hyperref}
 \hypersetup{
-     %true if colored links
-     %all if both sections and subsections linked
-    linkcolor=blue,   %color links 
-     linktoc=all,     %all if both sections and subsections linked
+    colorlinks=true, %true if colored links
+    linktoc=all,     %all if both sections and subsections linked
     linkcolor=blue,  %color links
     }
-  
+    \usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{Isoperimetric Inequality}
+            
+        \vspace{0.5cm}
+        \LARGE
+    
+            
+        \vspace{1.5cm}
+            
+        \textbf{Prashant Kumar}
+            
+        \vfill
+            
+        \textit{A dissertation submitted for the partial fulfilment of BS-MS dual degree in Science}          
+        \vspace{0.9cm}
+            
+        \includegraphics[width=0.4\textwidth]{iiser logo.png}
+            
+        \Large
+        Department of Mathematical Sciences\\
+        Indian Institue of Science Education and Research Mohali\\
+        India\\
+        June 2020
+            
+    \end{center}
+\end{titlepage}
+
+
+
+
 \urlstyle{same}
 \tableofcontents
-\thispagestyle{empty} 
-\chapter*{Certificate of Examination} 
+\thispagestyle{empty}
+ \addcontentsline{toc}{chapter}{Certificate of Examination}
+\chapter*{Certificate of Examination}
+This is to certify that the dissertation titled \enquote{Isoperimetric Inequality} submitted by Prashant Kumar (Reg. number $-$ MS15114) for the partial fulfillment of BS-MS dual degree program of the Institute, has been examined by the thesis committee duly appointed by the Institute. The committee finds the work done by the candidate satisfactory and recommends that the report be accepted.\\\\
+\textbf{Dr. Soma Maity} (Supervisor)\\
+\\
+ \textbf{Dr. Lingaraj Sahu}  \hfill           \textbf{ Dr. Pranab Sardar}\\
+\\
+\\
+\rightline{\textbf{Date:} April 2020}
+\thispagestyle{empty}
+ \addcontentsline{toc}{chapter}{Declaration of Authorship}
+ \chapter*{Certificate of Examination} 
 \pagenumbering{roman}
 This is to certify that the dissertation titled \enquote{Isoperimetric Inequality} submitted by Prashant Kumar (Reg. number $-$ MS15114) for the partial fulfillment of BS-MS dual degree program of the Institute, has been examined by the thesis committee duly appointed by the Institute. The committee finds the work done by the candidate satisfactory and recommends that the report be accepted.\\\\
 \textbf{Dr. Soma Maity} (Supervisor)\\
@@ -1246,7 +1288,35 @@ for all $k \in \mathbb{N}, x_{i} \in \mathbb{R}^{n},$ and $\alpha_{i} \in[0,1]$ 
 for convex  $f: \mathbb{R}^{n} \rightarrow(-\infty, \infty]$   cl epi $f$ is the closer of set epigraph of $f$ and hence epigraph of a closed convex function, which we denote by cl $f$
 \end{mydef}
 
+\begin{theorem}	
 
+ On int dom $f$, convex function $f: \mathbb{R}^{n} \rightarrow(-\infty, \infty]$ is continuous and on compact subsets of int dom $f$,it is Lipschitz continuous 	
+
+\end{theorem}	
+\newpage	
+Now we examine differentiability characteristics of convex functions	
+\begin{theorem}	
+
+ Let $f: \mathbb{R}^{1} \rightarrow(-\infty, \infty]$ is convex function.	
+\begin{enumerate}	
+    \item 	
+ In each point $x \in$ int dom $f$, the right derivative $| f^{+}(x)$ and the left derivative $f^{-}(x)$ exist and fulfill $f^{-}(x) \leq | f^{+}(x)$	
+\\	
+\item	
+ On int $\operatorname{dom} f,$ the functions $f^{+}$ and $f^{-}$ are monotonically increasing and, for almost all	
+$x \in$ int dom $f\left(\text { with respect to the Lebesgue measure } \lambda_{1} \text { on } \mathbb{R}^{1}\right),$ we have $f^{-}(x)=f^{+}(x),$ hence $f$ is almost everywhere differentiable on cl dom $f$	
+\\	
+\item	
+ Moreover, $f^{+}(x)$	
+is continuous from the right and $f^{-}$ is continuous from the left, and $f$ is the indefinite integral of $ f^{+}, \text { (of } f^{-} \text {and of } f^{\prime} in \operator {int dom} f$	
+\end{enumerate}	
+
+
+
+
+
+
+\end{theorem}
 
 
 
@@ -1396,6 +1466,7 @@ and
 $$ A_{+}(K):=\inf _{P \supset K} A(P), \quad A_{-}(K):=\sup _{P \subset K} A(P) $$ 
  \end{mydef}
  
+\begin{theorem} 	
 \label{t:9}
 For $K \in \mathcal{K}^{n}$, We have 
 \begin{equation}
@@ -1545,8 +1616,7 @@ Whenever $K_{i}^{(j)} \rightarrow K_{i}, i=1, \ldots, n$
 \[
 V\left(K_{1}^{(j)}, \ldots, K_{n}^{(j)}\right) \rightarrow V\left(K_{1}, \ldots, K_{n}\right)
 \]
-\item $V$ is positive and in each argument,$V$ is monotone.
- 
+\item $V$ is positive, and in each argument,$V$ is monotone.	 
  
   \end{enumerate}
  
